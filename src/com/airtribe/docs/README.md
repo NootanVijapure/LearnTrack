@@ -1,4 +1,4 @@
-# Student Course Enrollment Management System
+
 
 ## Project Description
 This is a menu-driven console application built using Java.  
