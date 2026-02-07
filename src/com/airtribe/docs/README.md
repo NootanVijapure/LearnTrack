@@ -70,62 +70,8 @@ com.airtribe
 
 ## Class diagram and relationship between classes 
 
-                 ┌─────────────┐
-                 │   Person    │
-                 ├─────────────┤
-                 │ - firstName │
-                 │ - lastName  │
-                 │ - email     │
-                 └─────────────┘
-                        ▲
-         ┌──────────────┴──────────────┐
-         │                             │
-┌─────────────┐                 ┌─────────────┐
-│   Student   │                 │   Trainer   │
-├─────────────┤                 ├─────────────┤
-│ - id        │                 │ - id        │
-│ - batch     │                 │ - expertise │
-│ - active    │                 │ - availability : boolean │
-│             │                 │ - company   │
-└─────────────┘                 └─────────────┘
-
-
-
-
-┌─────────────┐
-│   Course    │
-├─────────────┤
-│ - courseId  │
-│ - courseName│
-│ - description │
-│ - durationInWeeks │
-│ - active    │
-└─────────────┘
-
-┌─────────────────────┐
-│    Enrollment       │
-├─────────────────────┤
-│ - id                │
-│ - studentId         │
-│ - courseId          │
-│ - enrollmentDate    │
-│ - status: enum      │
-└─────────────────────┘
-
-┌───────────────────────────┐
-│       IdGenerator         │
-├───────────────────────────┤
-│ - studentIdCounter : int <<static>> │
-│ - courseIdCounter : int <<static>>  │
-│ - enrollmentIdCounter : int <<static>> │
-│ - trainerIdCounter : int <<static>> │
-├───────────────────────────┤
-│ + getNextStudentId() : int  │
-│ + getNextTrainerId() : int  │
-│ + getNextCourseId() : int   │
-│ + getNextEnrollmentId() : int │
-└───────────────────────────┘
-
+![Class Diagram](docs/ClassDiagram.png)
+              
 
 
 ## How To Compile
