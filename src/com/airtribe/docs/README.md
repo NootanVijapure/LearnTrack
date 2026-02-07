@@ -68,6 +68,7 @@ com.airtribe
 │
 └── Main.java
 
+![Class Diagram](docs/ProjectStructure.png)
 ## Class diagram and relationship between classes 
 
 ![Class Diagram](ClassDiagram.png)
