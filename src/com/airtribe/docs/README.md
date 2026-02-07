@@ -46,29 +46,8 @@ The program runs completely in-memory using ArrayList collections and does not r
 
 ## Project Structure
 
-com.airtribe
-│
-├── entity
-│ ├── Student.java
-│ ├── Course.java
-│ ├── Enrollment.java
-│ ├── Person.java
-│ └── Trainer.java
-│
-├── service
-│ ├── StudentService.java
-│ ├── CourseService.java
-│ └── EnrollmentService.java
-│
-├── util
-│ └── IdGenerator.java
-│
-├── exception
-│ └── EntityNotFoundException.java
-│
-└── Main.java
+![Class Diagram](ProjectStructure.png)
 
-![Class Diagram](docs/ProjectStructure.png)
 ## Class diagram and relationship between classes 
 
 ![Class Diagram](ClassDiagram.png)
