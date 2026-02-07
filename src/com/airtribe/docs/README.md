@@ -70,7 +70,7 @@ com.airtribe
 
 ## Class diagram and relationship between classes 
 
-![Class Diagram](/docs/ClassDiagram.png)
+![Class Diagram](ClassDiagram.png)
               
 
 
