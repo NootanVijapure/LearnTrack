@@ -1,4 +1,4 @@
-# Student Course Enrollment Management System
+
 
 ## Project Description
 This is a menu-driven console application built using Java.  
@@ -46,86 +46,12 @@ The program runs completely in-memory using ArrayList collections and does not r
 
 ## Project Structure
 
-com.airtribe
-│
-├── entity
-│ ├── Student.java
-│ ├── Course.java
-│ ├── Enrollment.java
-│ ├── Person.java
-│ └── Trainer.java
-│
-├── service
-│ ├── StudentService.java
-│ ├── CourseService.java
-│ └── EnrollmentService.java
-│
-├── util
-│ └── IdGenerator.java
-│
-├── exception
-│ └── EntityNotFoundException.java
-│
-└── Main.java
+![Class Diagram](ProjectStructure.png)
 
 ## Class diagram and relationship between classes 
 
-                 ┌─────────────┐
-                 │   Person    │
-                 ├─────────────┤
-                 │ - firstName │
-                 │ - lastName  │
-                 │ - email     │
-                 └─────────────┘
-                        ▲
-         ┌──────────────┴──────────────┐
-         │                             │
-┌─────────────┐                 ┌─────────────┐
-│   Student   │                 │   Trainer   │
-├─────────────┤                 ├─────────────┤
-│ - id        │                 │ - id        │
-│ - batch     │                 │ - expertise │
-│ - active    │                 │ - availability : boolean │
-│             │                 │ - company   │
-└─────────────┘                 └─────────────┘
-
-
-
-
-┌─────────────┐
-│   Course    │
-├─────────────┤
-│ - courseId  │
-│ - courseName│
-│ - description │
-│ - durationInWeeks │
-│ - active    │
-└─────────────┘
-
-┌─────────────────────┐
-│    Enrollment       │
-├─────────────────────┤
-│ - id                │
-│ - studentId         │
-│ - courseId          │
-│ - enrollmentDate    │
-│ - status: enum      │
-└─────────────────────┘
-
-┌───────────────────────────┐
-│       IdGenerator         │
-├───────────────────────────┤
-│ - studentIdCounter : int <<static>> │
-│ - courseIdCounter : int <<static>>  │
-│ - enrollmentIdCounter : int <<static>> │
-│ - trainerIdCounter : int <<static>> │
-├───────────────────────────┤
-│ + getNextStudentId() : int  │
-│ + getNextTrainerId() : int  │
-│ + getNextCourseId() : int   │
-│ + getNextEnrollmentId() : int │
-└───────────────────────────┘
-
+![Class Diagram](ClassDiagram.png)
+              
 
 
 ## How To Compile
